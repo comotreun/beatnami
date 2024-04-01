@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    private float moveSpeed = 3f;
+    private float moveSpeed = 50f;
 
     void Update()
     {
