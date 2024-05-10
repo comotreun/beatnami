@@ -16,11 +16,11 @@ public class pond1 : MonoBehaviour
     {
         currentTiem += Time.deltaTime;
 
-        if (currentTiem >= 60d / bpm)
+        if (currentTiem >= 120d / bpm)
         {
             GameObject t_note = Instantiate(goNote, tfNotcAppear.position, Quaternion.identity);
             t_note.transform.SetParent(this.transform);
-            currentTiem -= 60d / bpm;    //0으로 안하는 이유 사소한의 오차가 생길 수도 있음 
+            currentTiem -= 120d / bpm;    //0으로 안하는 이유 사소한의 오차가 생길 수도 있음 
         }
     }
 }
